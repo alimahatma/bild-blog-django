@@ -11,9 +11,17 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import smtplib
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+# Email server configuration
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER ='laluallistilo@gmail.com'
+EMAIL_HOST_PASSWORD = 'ajslugojwitoaxmn'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 
 
 # Quick-start development settings - unsuitable for production
